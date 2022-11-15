@@ -1,0 +1,154 @@
+$background-color-dark: #000000;
+$white-color : rgb(212, 212, 212);
+
+$light-dark: rgb(23, 23, 23);
+$complimentary-color-light: #FEFFFF;
+
+
+body.dark-mode {
+  background-color: $background-color-dark;
+  color: $white-color;
+  ;
+
+  .header {
+    background-color: $light-dark;
+
+    .dropdown-menu {
+      background-color: $light-dark;
+    }
+    
+
+    .headerContainer {
+
+      &__logo {
+        background-color: $white-color;
+        border: 0 solid $white-color;
+        border-radius: 5px;
+      }
+
+      &__right {
+
+        i {
+          color: #FEFFFF;
+        }
+
+      }
+
+
+    }
+
+
+  }
+
+  .leftBar{
+
+    &__menu {
+
+      ul li a {
+
+        color: $white-color;
+
+      }
+
+
+    }
+
+    &__social {
+
+      a {
+        color: $white-color ;
+      }
+
+    }
+
+    &__taglist {
+
+      header {
+        
+        i {
+          color: $white-color;
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+  .rightBar {
+
+    &__card-hackathon{
+      background-color: $light-dark;
+    }
+
+    .card {
+      background-color: $light-dark;
+
+      li {
+
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+
+      }
+
+    }
+
+  }
+
+
+  .article{
+    background-color: $light-dark;
+
+    &__details {
+
+      .u-details {
+
+        .u-name, .time
+         {
+          color: $white-color;
+        }
+
+        .tags {
+
+          span {
+            color: $white-color;
+          }
+
+        }
+
+        .additional-details {
+
+          .reactions {
+
+            a {
+
+              color: rgb(212, 212, 212, 80%);
+
+              &:hover {
+                color: $white-color;
+              }
+
+            }
+
+          }
+
+          .save {
+
+            small{
+              color: $white-color;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+}
